@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creative Programmer | Developer</title>
+        <meta name="Viewport" content="Width=device-width,initial-scale=1.0">
+        <link rel="Icon" href="https://i.ibb.co/T4sMzNv/20210507-160522.png">
+        <script src="/__/firebase/8.5.0/firebase-app.js"></script>
+        <script src="/__/firebase/8.5.0/firebase-analytics.js"></script>
+        <script src="/__/firebase/init.js"></script>
+        <style>
+                    @font-face {
+                        font-family: gr;
+                        src: url("https://storage.cloudconvert.com/tasks/67654f92-e748-4c00-ba95-e1f6043242c2/Gb.woff?AWSAccessKeyId=cloudconvert-production&Expires=1620625981&Signature=cWu7T51TVE%2FJIqfEcqd0Pfom83w%3D&response-content-disposition=attachment%3B%20filename%3D%22Gb.woff%22&response-content-type=font%2Fwoff");
+                    }
+                    @font-face {
+                        font-family:ct;
+                        src: url("https://storage.cloudconvert.com/tasks/bd8be3b0-518c-440b-993e-4213e9b99edc/Ct.woff?AWSAccessKeyId=cloudconvert-production&Expires=1620625866&Signature=v2ZWGUsztDW%2FgtAN0yh52Ac%2FS3Q%3D&response-content-disposition=attachment%3B%20filename%3D%22Ct.woff%22&response-content-type=font%2Fwoff");
+                    }
+                    @font-face {
+                        font-family:comic;
+                        src: url("https://storage.cloudconvert.com/tasks/8e35c7f6-bedd-47bf-a390-911381e9bef2/If.woff?AWSAccessKeyId=cloudconvert-production&Expires=1620624382&Signature=WA340HogJlMarhw2byou4XjOw88%3D&response-content-disposition=attachment%3B%20filename%3D%22If.woff%22&response-content-type=font%2Fwoff")
+                    }
+                    @font-face{
+                        font-family:vc;
+                        src: url("https://storage.cloudconvert.com/tasks/d95369a0-d5e3-4cc9-9075-44dffe40c19a/vg.woff?AWSAccessKeyId=cloudconvert-production&Expires=1620625784&Signature=yLo89PBNi1Abj4XdL86O2R%2BsXGo%3D&response-content-disposition=attachment%3B%20filename%3D%22vg.woff%22&response-content-type=font%2Fwoff");
+                    }
+                #hme
+                {
+                    height:500px;
+                    background-color:#a15e87;
+                    transition:0.5s;
+                    border-radius: 10px;
+                    cursor:default;
+                    display: none;
+                }
+        
+                #dwnld
+                {
+                    height:200px;
+                    background-color:#a15e87;
+                    border-radius: 10px;
+                    display:none;
+                    transition:0.5s;
+                    cursor:default;
+                }
+                #imgs
+                {
+                    height:300px;
+                    background-color:#a15e87;
+                    border-radius: 10px;
+                    display:none;
+                    cursor:default;
+                    transition:0.5s;
+                }
+                #abt
+                {
+                    height:500px;
+                    background-color:#a15e87;
+                    border-radius: 10px;
+                    cursor:default;
+                    transition:0.5s;
+                    display:none;
+                }
+                h2
+                {
+                    text-align: center;
+                    transition:0.5s;
+                }
+                .logo                                                                                                                      
+                {                                                              
+                    height:200px;                                                   
+                    width:200px;                          
+                    transition: 0.5s;  
+                    margin-left:550px;  
+                }
+                .TLK
+                {
+                    font-size:20px;
+                    margin-left: 10px;
+                    font-family:ct;
+                    margin-top: 10px;
+                    transition:0.5s;
+                }
+                #hi
+                {
+                    text-shadow:5px 5px 5px blue;
+                    transition:0.5s;
+                }
+                .TLK
+                {
+                    background-color:rgba(0, 0, 255, 0.137);
+                    padding-left: 20px;
+                    padding-top:20px;
+                    line-height: 30px;
+                    letter-spacing: 2px;
+                    transition:0.5s;
+                    padding-bottom: 20px;
+                }
+                .up
+                {
+                    margin-left: 90px;
+                    font-size:20px;
+                    transition:0.5s;
+                    font-family:gr;
+                }
+                .ftr
+                {
+                    background-color:rgba(5, 5, 5, 0.685);
+                    filter: opacity(70%);
+                    background-size:100%;
+                    margin-left:2px;
+                    transition:0.5s;
+                    height:200px;
+                    border-radius:10px;
+        
+                }
+                .loc
+                {
+                    display:inline-block;
+                    color:white;
+                    transition:0.5s;
+                    margin-top:130px;
+                    word-spacing: 10px;
+                    letter-spacing: 1px;
+                }
+                footer .brand
+                {
+                    color:white;
+                    margin-top:130px;
+                    margin-left:900px;
+                    transition:0.5s;
+                    display: inline;
+                    cursor:pointer;
+                }
+                .prd
+                {
+                    position:absolute;
+                    display: block;
+                    transition:0.5s;
+                    color:white;
+                    margin-left: 60px;
+                    margin-top:10px;
+                    cursor:default;
+                }
+                .prd1
+                {
+                    position:absolute;
+                    display: block;
+                    color:rgb(211, 195, 195);
+                    margin-left: 30px;
+                    margin-top:40px;
+                    transition:0.5s;
+                    cursor:pointer;
+                }
+                .prd2
+                {
+                    position:absolute;
+                    display: block;
+                    color:rgb(211, 195, 195);
+                    margin-left: 30px;
+                    margin-top:70px;
+                    transition:0.5s;
+                    cursor:pointer;
+                }
+                .prd3
+                {
+                    position:absolute;
+                    display: block;
+                    color:rgb(211, 195, 195);
+                    margin-left: 30px;
+                    transition:0.5s;
+                    margin-top:100px;
+                    cursor:pointer;
+                }
+                #hvr:hover
+                {
+                    color:rgb(37, 75, 241);
+                    text-decoration: underline;
+                    transition:0.5s;
+                }
+                .yt
+                {
+                    margin-left: 400px;
+                    position: absolute;
+                    transition:0.5s;
+                    border-radius:50%;
+                    margin-top: 5px;
+                    cursor:pointer;
+                    border:1px solid black;
+                }
+                .fb
+                {
+                    margin-left: 440px;
+                    border-radius: 50%;
+                    position: absolute;
+                    transition:0.5s;
+                    cursor:pointer;
+                }
+                .gh
+                {
+                    margin-left: 487px;
+                    position: absolute;
+                    margin-top: 5px;
+                    transition:0.5s;
+                    border-radius: 100%;
+                    cursor:pointer;
+                }
+                .gm
+                {
+                    margin-left: 533px;
+                    position: absolute;
+                    margin-top: 5px;
+                    cursor:pointer;
+                    border-radius: 50%;
+                    transition:0.5s;
+                }
+                .tg
+                {
+                    margin-left: 577px;
+                    position: absolute;
+                    border-radius: 50%;
+                    transition:0.5s;
+                    margin-top: 5px;
+                    cursor:pointer;
+                }
+                .wa
+                {
+                    margin-left: 623px;
+                    transition:0.5s;
+                    position: absolute;
+                    border-radius: 50%;
+                    margin-top: 5px;
+                    background-color:black;
+                    cursor:pointer;
+                    border:1px solid black;
+                }
+        
+                footer h2
+                {
+                    text-align: left;
+                    margin-left: 456px;
+                    color:white;
+                    transition:0.5s;
+                    font-family:comic;
+                    cursor:default;
+                    transition:0.5s;
+                    animation:ftr 2s linear infinite;
+                }
+                @keyframes ftr
+                {
+                    from{text-shadow: 2px 2px 5px blue;}
+                    to{text-shadow: 2px 2px 5px yellow;}
+                }
+                .lg
+                {
+                    margin-left: 407px;
+                    transition:0.5s;
+                    position: absolute;
+                    margin-top: 25px;
+                }
+                .lgg
+                {
+                    margin-left: 1110px;
+                    position: absolute;
+                    margin-top: 25px;
+                    transition:0.5s;
+                }
+        
+        
+        
+                /*It works if the user uses tablet*/
+        
+                @media only screen and (max-width:1000px)
+                {
+                    #hme
+                    {
+                        height:730px;
+                    }
+                    .nav li
+                    {
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                        font-size: 19px;
+                    }
+                    #cp
+                    {
+                        font-size: 20px;
+                        margin-left: 100px;
+                        padding-right:60px;
+                    }
+                    /*============footer============
+                    ==============================*/
+                    .ftr
+                    {
+                        height:300px;
+                        display: none;
+                    }
+        
+                    /*============logo============
+                    ==============================*/
+                    .logo
+                    {                                                              
+                        height:200px;                                                   
+                        width:200px;                          
+                        transition: 0.5s;  
+                        margin-left:130px;                 
+                    }
+                    /*======================Social==============================
+                    ========================Icons=============================*/     
+                    .yt
+                    {
+                        margin-left: 400px;
+                        position: absolute;
+                        border-radius:50%;
+                        margin-top: 5px;
+                        cursor:pointer;
+                    }
+                    .fb
+                    {
+                        margin-left: 440px;
+                        position: absolute;
+                        cursor:pointer;
+                    }
+                    .gh
+                    {
+                        margin-left: 487px;
+                        position: absolute;
+                        margin-top: 5px;
+                        border-radius: 100%;
+                        cursor:pointer;
+                    }
+                    .gm
+                    {
+                        margin-left: 533px;
+                        position: absolute;
+                        margin-top: 5px;
+                        cursor:pointer;
+                    }
+                    .tg
+                    {
+                        margin-left: 577px;
+                        position: absolute;
+                        border-radius: 50%;
+                        margin-top: 5px;
+                        cursor:pointer;
+                    }
+                    .wa
+                    {
+                        margin-left: 623px;
+                        position: absolute;
+                        border-radius: 50%;
+                        margin-top: 5px;
+                        background-color:black;
+                        cursor:pointer;
+                    }
+        
+                    footer h2
+                    {
+                        text-align: left;
+                        margin-left: 456px;
+                        color:white;
+                        font-family:comic;
+                        cursor:default;
+                    }
+                    .lg
+                    {
+                        margin-left: 170px;
+                        position: absolute;
+                        margin-top: 105px;
+                    }
+                    .lgg
+                    {
+                        margin-left: 562px;
+                        position: absolute;
+                        margin-top: 115px;
+                    }
+                    footer .brand 
+                    {
+                        margin-left: 360px;
+                        position: absolute;
+                        margin-top: 205px;
+                    }
+                    .loc
+                    {
+                        margin-top:220px;
+                    }
+                }
+        
+        
+        
+                /*It work if the user uses mobile phone*/
+                @media only screen and (max-width:700px)
+                {
+                    /*our branndings*/
+                    footer h2
+                    {
+                        text-align: left;
+                        margin-left: 162px;
+                        color:white;
+                        font-family:comic;
+                        cursor:default;
+                    }
+                    .lg
+                    {
+                        margin-left: 170px;
+                        position: absolute;
+                        margin-top: 20px;
+                    }
+                    .lgg
+                    {
+                        margin-left: 302px;
+                        position: absolute;
+                        margin-top: 75px;
+                    }
+                    footer .brand 
+                    {
+                        margin-left: 100px;
+                        position: absolute;
+                        margin-top: 165px;
+                    }
+                    .loc
+                    {
+                        margin-top:160px;
+                    }
+                    /* Products */
+                    
+                    .prd
+                    {
+                        position:absolute;
+                        display: block;
+                        color:white;
+                        margin-left: 15px;
+                        margin-top:10px;
+                        cursor:default;
+                    }
+                    .prd1
+                    {
+                        position:absolute;
+                        display: block;
+                        color:rgb(211, 195, 195);
+                        margin-left: -15px;
+                        margin-top:40px;
+                        cursor:pointer;
+                    }
+                    .prd2
+                    {
+                        position:absolute;
+                        display: block;
+                        color:rgb(211, 195, 195);
+                        margin-left: -15px;
+                        margin-top:70px;
+                        cursor:pointer;
+                    }
+                    .prd3
+                    {
+                        position:absolute;
+                        display: block;
+                        color:rgb(211, 195, 195);
+                        margin-left: -15px;
+                        margin-top:100px;
+                        cursor:pointer;
+                    }
+                    /*These are Social Icon*/
+                    .yt
+                    {
+                        margin-left: 130px;
+                        position: absolute;
+                        border-radius:50%;
+                        cursor:pointer;
+                        border:2px solid black;
+                    }
+                    .fb
+                    {
+                        margin-left: 172px;
+                        position: absolute;
+                        cursor:pointer;
+                    }
+                    .gh
+                    {
+                        margin-left: 220px;
+                        position: absolute;
+                        border-radius: 100%;
+                        cursor:pointer;
+                    }
+                    .gm
+                    {
+                        margin-left: 265px;
+                        position: absolute;
+                        cursor:pointer;
+                    }
+                    .tg
+                    {
+                        margin-left: 310px;
+                        position: absolute;
+                        border-radius: 50%;
+                        cursor:pointer;
+                    }
+                    .wa
+                    {
+                        margin-left: 355px;
+                        position: absolute;
+                        border-radius: 50%;
+                        background-color:black;
+                        cursor:pointer;
+                    }
+        
+                } 
+             
+                    .bdy
+                    {
+                        background-color:rgba(0, 128, 0, 0.884);
+                        transition:0.5s;
+                        /* #573349 */
+                    }
+                    .nav
+                    {
+                        background-color:#a86b91;
+                        margin-top:10px;
+                        min-height:60px;
+                        transition:0.5s;
+                        display:none;
+                    }
+                    .nav li
+                    {
+                        
+                        font-family:Impact, 'Arial Narrow Bold', sans-serif;
+                        display:inline-block;
+                        font-size:25px;
+                        margin-top:10px;
+                        margin-left: 120px;
+                        cursor:pointer;
+                        background:url("https://bit.ly/3vLEDG0");
+                        border:1px solid black;
+                        padding-left:15px;
+                        padding-right:15px;
+                        padding-top:5px;
+                        padding-bottom:5px;
+                        box-shadow:5px 5px 8px yellow;
+                        text-shadow:2px 2px 5px blue;
+                        transition:0.5s;
+                    }
+                    #cp
+                    {
+                        display:inline-block;
+                        margin-top:5px;
+                        margin-left:-35px;
+                        padding-right:-10px;
+                        color: rgba(0, 0, 0, 0.952);
+                        font-size:30px;
+                        cursor:default;
+                        height: 50px;
+                        text-shadow: 3px 3px 6px blue;
+                        transition:0.5s;
+                    }
+                    .dev
+                    {
+                        border-radius:50%;
+                        margin-top:50px;
+                        margin-left: 20px;
+                        transition:0.5s;
+                        height:150px;
+                        width:150px;
+                    }
+                    /*seperate details*/
+                    .tgg
+                    {
+                        height: 100px;
+                        width:980px;
+                        padding-left:350px;
+                        padding-top:50px;
+                        background-color: #a86b91;
+                        border-radius: 10px;
+                        align-items: center;
+                        align-content: flex;
+                        font-family:vc;
+                        cursor:default;
+                        display: none;
+                    }
+                    .int
+                    {
+                        font-family: comic;
+                        font-size:20px;
+                        margin-left:300px;
+                        font-weight: bold;
+                    }
+                    .ic
+                    {
+                        background:url("https://bit.ly/3bc4WgO");
+                        background-size: 100%;
+                        margin-top:-50px;
+                        margin-left:-150px;
+                        cursor:default;
+                        height:100px;
+                        width:100px;
+                    }
+                    .lnk
+                    {
+                        width:150px;
+                        padding-left:50px;
+                        padding-top:-250px;
+                        margin-top: -30px;
+                        border-radius: 10px;
+                        align-items: center;
+                        align-content: flex;
+                        font-family:vc;
+                        cursor:pointer;
+                    }
+                    .dtl
+                    {
+                        font-size:20px;
+                        font-weight:bold;
+                        margin-left:600px;
+                        margin-top:-10px;
+                        display:block;
+                    }
+                    #p
+                    {
+                        margin-top:10px;
+                    }
+                    #h
+                    {
+                        margin-top:10px;
+                    }
+                    #d
+                    {
+                        margin-top:10px;
+                    }
+                    #s
+                    {
+                        margin-top:10px;
+                    }
+                    #a
+                    {
+                        margin-top:10px;
+                    }
+                    /*total details*/
+        
+                    .dtl
+                    {
+                        font-size:20px;
+                        font-weight:bold;
+                        margin-left:300px;
+                        margin-top:-160px;
+                        display:block;
+                        animation:txt 3s linear infinite;
+                    }
+                    /* Development Tools */
+                    .ut
+                    {
+                        height:50px;
+                        width:50px;
+                        margin-left: 20px;
+                        margin-top:40px;
+                        animation:ani 2s linear infinite;
+                    }
+                    .css
+                    {
+                        height:50px;
+                        width:50px;
+                        margin-left: -10px;
+                        margin-top:40px;
+                        animation:ani 2s linear infinite;
+                    }
+                    .js
+                    {
+                        height:50px;
+                        width:70px;
+                        margin-left: 20px;
+                        margin-top:40px;
+                        animation:ani 2s linear infinite;
+                    }
+                    .bl
+                    {
+                        height:30px;
+                        width:30px;
+                        margin-left: 20px;
+                        margin-top:40px;
+                        animation:ani 2s linear infinite;
+                    }
+                    .vs
+                    {
+                        height:30px;
+                        width:40px;
+                        margin-left: 20px;
+                        margin-top:40px;
+                        animation:ani 2s linear infinite;
+                    }
+                    .ht
+                    {
+                        height:40px;
+                        width:30px;
+                        margin-left: 20px;
+                        margin-top:40px;
+                        animation:ani 2s linear infinite;
+                    }
+                    .load
+                    {
+                        background:url("https://i.ibb.co/jD0ksKg/lg.png");
+                        background-size: 100%;
+                        height:100px;
+                        width:200px;
+                        position:fixed;
+                        top:50%;
+                        left:43.5%;
+                    }
+                    .o-3
+                    {
+                        border:10px dotted rgb(40, 88, 40);
+                        height:0px;
+                        width:0px;
+                        border-radius:50%;
+                        position:fixed;
+                        top:50%;
+                        left:57.5%;
+                        animation:load 4s forwards infinite;
+                        animation-delay: 1.5s;
+                    }
+                    .o-2
+                    {
+                        border:10px dotted rgba(236, 24, 24, 0.664);
+                        height:0px;
+                        width:0px;
+                        border-radius:50%;
+                        position:fixed;
+                        top:50%;
+                        left:55%;
+                        animation:load 4s forwards infinite;
+                        animation-delay: 1.3s;
+                    }
+                    .o-1
+                    {
+                        border:10px dotted rgb(81, 81, 255);
+                        height:0px;
+                        width:0px;
+                        border-radius:50%;
+                        position:fixed;
+                        top:50%;
+                        left:52.5%;
+                        animation:load 4s forwards infinite;
+                        animation-delay: 1.1s;
+                    }
+                    .o
+                    {
+                        border:10px dotted rgba(255, 255, 0, 0.363);
+                        height:0px;
+                        width:0px;
+                        border-radius:50%;
+                        position:fixed;
+                        top:50%;
+                        left:50%;
+                        animation:load 4s forwards infinite;
+                        animation-delay: 0.9s;
+                    }
+                    .o1
+                    {
+                        border:10px dotted rgb(40, 88, 40);
+                        height:0px;
+                        width:0px;
+                        border-radius:50%;
+                        position:fixed;
+                        top:50%;
+                        left:47.5%;
+                        animation:load 4s forwards infinite;
+                        animation-delay: 0.7s;
+                    }
+                    .o2
+                    {
+                        border:10px dotted rgba(236, 24, 24, 0.664);
+                        height:0px;
+                        width:0px;
+                        border-radius:50%;
+                        position:fixed;
+                        top:50%;
+                        left:45%;
+                        animation:load 4s forwards infinite;
+                        animation-delay: 0.5s;
+                    }
+                    .o3
+                    {
+                        border:10px dotted rgb(81, 81, 255);
+                        height:0px;
+                        width:0px;
+                        border-radius:50%;
+                        position:fixed;
+                        top:50%;
+                        left:42.5%;
+                        animation:load 4s forwards infinite;
+                        animation-delay: 0.2s;
+                    }
+                    .wait
+                    {
+                        font-size:20px;
+                        font-family: comic;
+                        font-weight: bold;
+                        margin-top:-100px;
+                        cursor:default;
+                    }
+        
+                    /* For Loader */
+                    .ftr
+                    {
+                        display: none;
+                    }
+                    /* Animation */
+                    @keyframes load
+                    {
+                        50%{top:40%;}
+                    }
+                    @keyframes ani
+                    {
+                        
+                        0%{transform:rotate(10deg);}
+                        50%{transform:rotate(-10deg);}
+                        100%{transform:rotate(10deg);}
+                    }
+                    @keyframes  txt
+                    {
+                        from{text-shadow: 2px 2px 7px yellow;}
+                        to{text-shadow: 2px 2px 7px blue;}
+                    }
+                    .soon
+                    {
+                        font-family: gr;
+                    }
+                    .fci
+                    {
+                        background:url("https://bit.ly/2PVpUca");
+                        background-size: 100%;
+                        margin-top:10px;
+                        margin-left:-150px;
+                        cursor:default;
+                        height:95px;
+                        width:100px;
+                    }
+                    .fcl
+                    {
+                        width:150px;
+                        padding-left:50px;
+                        padding-top:-250px;
+                        margin-top: -30px;
+                        align-items: center;
+                        align-content: flex;
+                        font-family:vc;
+                        cursor:pointer;
+                    }
+                    .fc
+                    {
+                        height: 150px;
+                        width:980px;
+                        padding-left:350px;
+                        padding-top:10px;
+                        margin-top:10px;
+                        background-color: #a86b91;
+                        align-items: center;
+                        align-content: flex;
+                        font-family:vc;
+                        cursor:default;
+                        display: none;
+                    }
+                    /* It Will Works for Mobile Phone's */
+                    @media only screen and (max-width:700px)
+                    {
+                        .tgg
+                        {
+                            margin-left:-150px;
+                            width:274px;
+                            border-radius: 0px;
+                            height:20vh;
+                        }
+                        .fc
+                        {
+                            margin-left:-150px;
+                            width:274px;
+                            border-radius: 0px;
+                            height:20vh;
+                        }
+                        .int
+                        {
+                            margin-left: -20px;
+                        }
+                        .load
+                        {
+                            background:url("");
+                            background-size: 100%;
+                            height:100px;
+                            width:200px;
+                            position:fixed;
+                            top:50%;
+                            left:30%;
+                        }
+                        .o-3
+                        {
+                            border:10px dotted rgb(40, 88, 40);
+                            height:0px;
+                            width:0px;
+                            border-radius:50%;
+                            position:fixed;
+                            top:50%;
+                            left:60%;
+                            animation:load 4s forwards infinite;
+                            animation-delay: 1.5s;
+                        }
+                        .o-2
+                        {
+                            border:10px dotted rgba(236, 24, 24, 0.664);
+                            height:0px;
+                            width:0px;
+                            border-radius:50%;
+                            position:fixed;
+                            top:50%;
+                            left:55%;
+                            animation:load 4s forwards infinite;
+                            animation-delay: 1.3s;
+                        }
+                        .o-1
+                        {
+                            border:10px dotted rgb(81, 81, 255);
+                            height:0px;
+                            width:0px;
+                            border-radius:50%;
+                            position:fixed;
+                            top:50%;
+                            left:50%;
+                            animation:load 4s forwards infinite;
+                            animation-delay: 1.1s;
+                        }
+                        .o
+                        {
+                            border:10px dotted rgba(255, 255, 0, 0.363);
+                            height:0px;
+                            width:0px;
+                            border-radius:50%;
+                            position:fixed;
+                            top:50%;
+                            left:45%;
+                            animation:load 4s forwards infinite;
+                            animation-delay: 0.9s;
+                        }
+                        .o1
+                        {
+                            border:10px dotted rgb(40, 88, 40);
+                            height:0px;
+                            width:0px;
+                            border-radius:50%;
+                            position:fixed;
+                            top:50%;
+                            left:40%;
+                            animation:load 4s forwards infinite;
+                            animation-delay: 0.7s;
+                        }
+                        .o2
+                        {
+                            border:10px dotted rgba(236, 24, 24, 0.664);
+                            height:0px;
+                            width:0px;
+                            border-radius:50%;
+                            position:fixed;
+                            top:50%;
+                            left:35%;
+                            animation:load 4s forwards infinite;
+                            animation-delay: 0.5s;
+                        }
+                        .o3
+                        {
+                            border:10px dotted rgb(81, 81, 255);
+                            height:0px;
+                            width:0px;
+                            border-radius:50%;
+                            position:fixed;
+                            top:50%;
+                            left:30%;
+                            animation:load 4s forwards infinite;
+                            animation-delay: 0.2s;
+                        }
+                        .dev
+                        {
+                            border-radius:50%;
+                            margin-top:10px;
+                            margin-left:150px;
+                            transition:0.5s;
+                            height:150px;
+                            width:150px;
+                        }
+        
+                        .dtl
+                        {
+                            font-size:20px;
+                            font-weight:bold;
+                            margin-left:300px;
+                            margin-top:20px;
+                            display:block;
+                        }
+                            
+                        .dtl
+                        {
+                            font-size:20px;
+                            font-weight:bold;
+                            margin-left:20px;
+                            margin-top:10px;
+                            display:block;
+                        }
+                            
+                        /* Development Tools */
+                        .ut
+                        {
+                            height:50px;
+                            width:50px;
+                            margin-left: 20px;
+                            margin-top:0px;
+                            animation:ani 2s linear infinite;
+                        }
+                        .css
+                        {
+                            height:50px;
+                            width:50px;
+                            margin-left: -10px;
+                            margin-top:0px;
+                            animation:ani 2s linear infinite;
+                        }
+                        .js
+                        {
+                            height:50px;
+                            width:70px;
+                            margin-left: 20px;
+                            margin-top:0px;
+                            animation:ani 2s linear infinite;
+                        }
+                        .bl
+                        {
+                            height:30px;
+                            width:30px;
+                            margin-left: 20px;
+                            margin-top:0px;
+                            animation:ani 2s linear infinite;
+                        }
+                        .vs
+                        {
+                            height:30px;
+                            width:40px;
+                            margin-left: 20px;
+                            margin-top:0px;
+                            animation:ani 2s linear infinite;
+                        }
+                        .ht
+                        {
+                            height:40px;
+                            width:30px;
+                            margin-left: 20px;
+                            margin-top:0px;
+                            animation:ani 2s linear infinite;
+                        }
+                    }
+        </style>
+        <!--Scripts-->
+        <script>
+                        //Some Global variable for date &time 
+                        var d = new Date();
+                        var dd = d.getDate();
+                        var mm = d.getMonth();
+                        var y = d.getFullYear();
+                        var mmm = mm +1;
+        
+                        
+                    //It will works on load
+                    function load()
+                    {
+                    
+                        bdy();
+                        document.getElementById("up").innerHTML= "Latest Update on " + dd +"/"+ mmm +"/"+ y;
+                        
+        
+                    }
+                    setTimeout(   
+                    function loader()
+                    {
+                        document.querySelector(".load").style.display="none";
+                        document.querySelector("body").style.backgroundColor = "#573349";
+                        document.getElementById("nne").style.display = "block";
+                        document.getElementById("hme").style.display = "block";
+                        document.getElementById("fftr").style.display = "block";
+                        document.getElementById("grp").style.display = "block";
+                        document.getElementById("fc").style.display = "block";
+                    }
+                    ,15000);
+        
+                    //Buttons
+                    function hme()
+                    {
+                        document.getElementById("hme").style.display = "block";
+                        document.getElementById("dwnld").style.display = "none";
+                        document.getElementById("imgs").style.display = "none";
+                        document.getElementById("abt").style.display = "none";
+                        document.getElementById("grp").style.display = "block";
+                        document.getElementById("fc").style.display = "block";
+                    }
+        
+                    function dwnld()
+                    {
+                        document.getElementById("hme").style.display = "none";
+                        document.getElementById("imgs").style.display = "none";
+                        document.getElementById("abt").style.display = "none";
+                        document.getElementById("dwnld").style.display = "block";
+                        document.getElementById("grp").style.display = "none";
+                        document.getElementById("fc").style.display = "none";
+                    }
+                    function imgs()
+                    {
+                        document.getElementById("hme").style.display = "none";
+                        document.getElementById("dwnld").style.display = "none";
+                        document.getElementById("abt").style.display = "none";
+                        document.getElementById("imgs").style.display = "block";
+                        document.getElementById("grp").style.display = "none";
+                        document.getElementById("fc").style.display = "none";
+                    }
+                    function abt()
+                    {
+                        document.getElementById("hme").style.display = "none";
+                        document.getElementById("dwnld").style.display = "none";
+                        document.getElementById("imgs").style.display = "none";
+                        document.getElementById("grp").style.display = "none";
+                        document.getElementById("abt").style.display = "block";
+                        document.getElementById("fc").style.display = "none";
+                    }
+                    function yt()
+                    {
+                        location.href = "https://youtube.com/channel/UCDrpZsDY0d9t44iviRVVhJg";
+                    }
+                    function tg()
+                    {
+                        location.href = "https://t.me/programmer59";
+                    }
+                    function wa()
+                    {
+                        location.href = "https://wa.me/+919150968614";
+                    }
+                    function gm()
+                    {
+                        location.href = "mailto:saprasath15@gmail.com";
+                    }
+                    function fb()
+                    {
+                        location.href = "https://www.facebook.com/saprasath.71";
+                    }
+                    function gh()
+                    {
+                        location.href = "https://github.com/SAPrasath-dev";
+                    }
+                    function bdy()
+                    {
+                        document.getElementById("nne").style.display = "none";
+                        document.getElementById("hme").style.display = "none";
+                        document.getElementById("fftr").style.display = "none";
+                        
+                    }
+                    function grp()
+                    {
+                        location.href = "https://t.me/techguyz59";
+                    }
+                    function fc()
+                    {
+                        location.href = "file:///E:/HTML/Flames%20Counter/Flames.html";
+                    }
+        
+        </script>
+        
+        <noscript>Sorry!.... please allow Scripts in your browser. (or) Update your browser because your browser doesn't support Javascript.</noscript>
+
+            
+    </head>
+    <body onload="load();" class="bdy">
+        <div class="load"> 
+            <div class="wait">Loading... &NewLine; Please wait..</div>
+            <div class="o-1"></div>
+            <div class="o-2"></div>
+            <div class="o-3"></div>
+            <div class="o-4"></div>
+            <div class="o"></div>
+            <div class="o1"></div>
+            <div class="o2"></div>
+            <div class="o3"></div>
+        </div>
+        <div class="nav" id="nne">
+            <ul>
+                <h1 Id="cp">Creative Programmer</h1>
+                <li onclick="hme();" title="home">Home</li>
+                <li onclick="dwnld();" title="download">Download</li>
+                <li onclick="imgs();" title="images">Images</li>
+                <li onclick="abt();" title="about">About</li>
+            </ul>
+        </div>
+        
+
+            
+        <div class="tgg" id="grp">Join our Telegram Group
+            <div class="int">If you are developer join this group</div>
+            <div class="ic"></div>
+            <div class="lnk" onclick="grp()">Click to Join</div>
+        </div>
+        <div class="fc" id="fc">Flames Counter
+            <div class="fci"></div>
+            <div class="fcl" onclick="fc()">Click to Open</div>
+        </div>
+        <div Id="hme" >
+            <h2>Home</h2>
+            <img src="https://bit.ly/3vPeFRX" class="logo"><br>
+            <h1 class="up" id="up">Latest Update On</h1>
+            <h1 class="TLK" id="hi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hii Guys!.. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome Back to the Official Site Of Creative Programmer,
+            I am Prasath  Front End Web Developer,&nbsp;Software Developer,&nbsp;Game Developer,3D Modelling Artist,............
+             So I will publish my Game's,&nbsp;Applications,&nbsp;3D Objects&nbsp;&&nbsp;Html&Css themes for Developer's in Download page of this site &nbsp;Download,&nbsp;Install,&nbsp;And enjoy. </h1>
+        </div>
+
+
+        <div Id="dwnld">
+            <h2>Download</h2>
+                <h2 class="soon">Comming Soon</h2>
+        </div>
+
+
+        <div Id="imgs">
+            <h2>Images</h2>
+            <h2 class="soon">Comming Soon</h2>
+        </div>
+
+
+        <div Id="abt">
+            <h2>About</h2>
+            
+            <div class="dtl1">
+                <img src="https://bit.ly/3esDwFk" class="dev" alt="Developer" >
+                <li class="dtl" id="n">Name : SA.Prasath</li>
+                <li class="dtl" id="a">Age : 16</li>
+                <li class="dtl" id="s">Studying : 11th</li>
+                <li class="dtl" id="d">Development :Web &nbsp;,&nbsp;Software&nbsp;,&nbsp;Game's&nbsp;,&nbsp;3D Modelling</li>
+                <li class="dtl" id="h">Hobby : Web Development</li>
+                <li class="dtl" id="p">Programming Languages : C#&nbsp;,&nbsp;Javascript</li>
+            </div>
+                <img src="https://bit.ly/3vSf31V" class="ut" id="ut" alt="Unity">
+                <img src="https://bit.ly/3h9rL8s" class="css" id="css" alt="Css">
+                <img src="https://bit.ly/3eTw0SM" class="bl" id="bl" alt="Blender"> 
+                <img src="https://bit.ly/3tnASEZ" class="vs" id="vs" alt="Visual Studio">
+                <img src="https://bit.ly/3uwROu5" class="js" id=js alt="Javascript">
+                <img src="https://bit.ly/2QSOHhN" class="ht" id="ht" alt="Html">
+
+        </div>
+
+
+        <footer class="ftr" id="fftr">
+            <ul>
+                <li class="prd">Products</li>
+                <li id="hvr" class="prd1" onclick="dwnld()">For Developer's</li>
+                <li id="hvr" class="prd2" onclick="dwnld()">For Android user's</li>
+                <li id="hvr" class="prd3" onclick="dwnld()">For Windows User's</li>
+                <div class="si">
+                <li class="social">
+                    <h2>Follow Me On</h2>
+                    <img src="https://bit.ly/2RC4PE0" height="40px" Width="40px" class="gm" onclick="gm()" title="Gmail" alt="Gmail">
+                    <img src="https://bit.ly/3trm2xi" height="50px" Width="50px" class="fb" onclick="fb()" title="FaceBook" alt="FaceBook">
+                    <img src="https://bit.ly/3o7m0db" height="40px" Width="40px" class="gh" onclick="gh()"  title="GitHub" alt="GitHub">
+                    <img src="https://bit.ly/3eZmvlk" height="40px" Width="40px" class="yt" onclick="yt();" title="Youtube" alt="YouTube">
+                    <img src="https://bit.ly/3bc4WgO" height="40px" Width="40px" class="tg" onclick="tg()" title="Telegram" alt="Telegram">
+                    <img src="https://bit.ly/2PYp3aT" height="40px" Width="40px" class="wa" onclick="wa()" title="WhatsApp" alt="WhatsApp">
+                    <img src="https://bit.ly/3tn376J" height="100px" Width="200px"  class="lg" alt="Logo">
+                    <img src="https://bit.ly/3vPeFRX" height="100px" Width="100px" class="lgg" alt="logo">
+                </li>
+                </div>
+                <li class="loc">Puducherry,</li>
+                <li class="loc">Karaikal,India</li>
+                <li class="brand">Made By Prasath</li>
+            </ul>
+        </footer>
+    </body>
+</html>
